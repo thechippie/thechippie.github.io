@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
    
     <title>Grid Template for Bootstrap</title>
 <style>
@@ -113,10 +114,16 @@
       <h3>Three unequal columns</h3>
       <p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
  -->     
-      <div class="row">
+      <div class="row" style="margin-left: 0px !important; margin-right: 0px !important;">
         <div class="col-md-3" style="padding-top: 0px;"> 
            <!-- inicio de la caja de chat con bootstrap -->
-              <div class="col-md-6 col-md-offset-3" style="padding-top: 0px !important;">
+          
+            <div class="row">
+            <div class="col-md-4"><i class="fi fi-rr-chart-histogram"></i>Stats</div>
+            <div class="col-md-4"><i class="fi fi-rr-trophy-star"></i>Leaderboard</div>
+            <div class="col-md-4"><i class="fi fi-rr-badge"></i>Contests</div>
+          </div>
+              <div class="" style="padding-top: 0px !important;">
                   <div class="panel panel-primary">
                       <div class="panel-heading">
                           <span class="glyphicon glyphicon-comment"></span> Chat
@@ -166,9 +173,19 @@
                                      Mensaje
                               </p>
                       </div>
-              </li></div>
-        <div class="col-md-6" style="padding-top: 0px;padding-left: 0px;"><canvas class="threejs-canvas" id="canvas1"></canvas> <!-- Three.js canvas -->
-       
+              </li>
+        </div>
+        <div class="col-md-6" style="padding-top: 0px;padding-left: 0px; padding-bottom: 0px;">
+          <canvas class="threejs-canvas" id="canvas1"></canvas>
+        <hr style="margin-top: -6px;" />
+        Welcome To Hooked <br />
+        Provably Fair Cash Game on Solana.
+        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="Ch1pp1e_bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+<script type="text/javascript">
+  function onTelegramAuth(user) {
+    alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+  }
+</script>
         </div>
         <div class="col-md-3"><div class="row">
           <div class="col-md-3">
@@ -179,7 +196,8 @@
           </div>
           <div class="col-md-3"><div class="title">X</div></div>
           <div class="col-md-3"><div class="title">Payout</div></div>
-      </div></div>
+      </div>
+    </div>
       </div>
       <div class="row">
         <div class="col-md-3">.col-md-3</div>
